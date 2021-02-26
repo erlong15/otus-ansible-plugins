@@ -1,0 +1,6 @@
+[localhost]
+localhost
+
+[mynet]
+10.51.21.42 network_ip_management=10.51.20.42
+10.51.21.40 network_ip_management=10.51.20.40

@@ -1,0 +1,12 @@
+- name: test filter plugin
+  hosts: localhost
+  tasks:
+    - debug:
+        msg: '{{ item | to_htpasswd  }}'
+      loop:
+        - test1
+        - test2
+    - debug:
+        msg: '{{ item }}'
+      with_ip_management:
+        - mynet
